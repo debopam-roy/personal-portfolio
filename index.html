@@ -1,0 +1,36 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Debopam Roy</title>
+
+        <!-- Favicon (will be updated dynamically based on theme) -->
+        <link id="favicon" rel="icon" type="image/png" href="/logo_dark.png" />
+
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=DM+Serif+Text:ital@0;1&family=Delius&family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap"
+            rel="stylesheet" />
+
+        <script>
+            // Function to set the favicon based on theme
+            function updateFavicon() {
+                const darkMode = window.matchMedia('(prefers-color-scheme: dark)').matches;
+                const favicon = document.getElementById('favicon');
+                favicon.href = darkMode ? '/logo_dark.png' : '/logo_light.png';
+            }
+
+            // Run on page load
+            updateFavicon();
+
+            // Listen for theme changes
+            window.matchMedia('(prefers-color-scheme: dark)').addEventListener('change', updateFavicon);
+        </script>
+    </head>
+    <body>
+        <div id="root"></div>
+        <script type="module" src="/src/main.tsx"></script>
+    </body>
+</html>
