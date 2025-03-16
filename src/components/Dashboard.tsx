@@ -67,6 +67,9 @@ const Dashboard = () => {
                 <a href='https://www.hackerrank.com/profile/debo_roy79' target='_blank' rel='noopener noreferrer'>
                     <SocialButton social_media='hackerrank' icon_size='large' />
                 </a>
+                <a href='https://www.hackerrank.com/profile/debo_roy79' target='_blank' rel='noopener noreferrer'>
+                    <SocialButton social_media='codeforces' icon_size='large' />
+                </a>
             </motion.div>
         </div>
     );

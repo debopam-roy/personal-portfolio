@@ -143,9 +143,8 @@ const Contact = () => {
             </div>
 
             {/* Footer Section */}
-            <footer className='w-full h-18 flex items-center justify-center bg-white dark:bg-neutral-950 px-6 z-50 shadow-lg'>
+            <footer className='w-full h-18 flex items-center justify-center bg-white dark:bg-neutral-950 px-6 z-25 shadow-lg'>
                 <p className='text-sm font-extralight'>&copy; {currentYear} Debopam Roy. All Rights Reserved.</p>
-            
             </footer>
         </div>
     );

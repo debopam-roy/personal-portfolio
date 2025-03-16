@@ -19,7 +19,7 @@ const Navbar = () => {
     };
 
     return (
-        <nav className='fixed top-0 left-0 w-full h-20 shadow-lg flex items-center bg-white dark:bg-neutral-950 transition-colors duration-300 z-50'>
+        <nav className='fixed top-0 left-0 w-full h-20 shadow-lg flex items-center bg-white dark:bg-neutral-950 transition-colors duration-300 z-50 overflow-auto'>
             <div className='container mx-auto flex justify-between items-center px-6 h-full'>
                 {/* Left: Menu Button + Logo */}
                 <div className='flex items-center gap-x-2'>
@@ -45,9 +45,7 @@ const Navbar = () => {
                             key={item}
                             onClick={() => handleNavClick(item)}
                             className={`cursor-pointer font-semibold px-4 py-2 rounded-lg transition duration-300 ${
-                                activeLink === item
-                                    ? 'bg-gray-200 dark:bg-zinc-700'
-                                    : 'bg-none'
+                                activeLink === item ? 'bg-gray-200 dark:bg-zinc-700' : 'bg-none'
                             }`}>
                             {item}
                         </li>
@@ -62,9 +60,9 @@ const Navbar = () => {
 
             {/* Mobile Menu */}
             <div
-                className={`md:hidden fixed top-16 left-0 h-screen w-3/4 shadow-xl transform bg-white dark:bg-neutral-950 ${
-                    isOpen ? 'translate-x-0 opacity-100' : '-translate-x-full opacity-0'
-                } transition-all duration-300 ease-in-out z-50`}>
+                className={`md:hidden fixed top-20 left-0 w-3/4 h-[calc(100vh-3rem)] overflow-y-auto shadow-xl transform bg-white dark:bg-neutral-950 
+        ${isOpen ? 'translate-x-0 opacity-100' : '-translate-x-full opacity-0'} 
+        transition-all duration-300 ease-in-out z-50`}>
                 {/* Profile Section */}
                 <div className='p-6'>
                     <p className='font-bold text-lg'>Debopam Roy</p>
@@ -85,9 +83,7 @@ const Navbar = () => {
                             key={item}
                             onClick={() => handleNavClick(item)}
                             className={`cursor-pointer font-semibold px-4 py-2 rounded-md transition duration-300 ${
-                                activeLink === item
-                                    ? 'bg-gray-200 dark:bg-zinc-700'
-                                    : 'bg-none'
+                                activeLink === item ? 'bg-gray-200 dark:bg-zinc-700' : 'bg-none'
                             }`}>
                             {item}
                         </li>
@@ -100,7 +96,7 @@ const Navbar = () => {
                 </div>
 
                 {/* Social Links */}
-                <div className='p-6 space-y-4'>
+                <div className='p-6 space-y-4 mb-10'>
                     <p className='font-semibold'>Let's Connect</p>
 
                     <div className='flex gap-x-4'>
@@ -115,6 +111,12 @@ const Navbar = () => {
                             target='_blank'
                             rel='noopener noreferrer'>
                             <SocialButton social_media='hackerrank' icon_size='large' />
+                        </a>
+                        <a
+                            href='https://www.hackerrank.com/profile/debo_roy79'
+                            target='_blank'
+                            rel='noopener noreferrer'>
+                            <SocialButton social_media='codeforces' icon_size='large' />
                         </a>
                     </div>
                 </div>

@@ -5,6 +5,7 @@ import { FaXTwitter } from 'react-icons/fa6';
 import { SiLeetcode } from 'react-icons/si';
 import { FaDiscord } from 'react-icons/fa';
 import { FaHackerrank } from 'react-icons/fa6';
+import { SiCodeforces } from 'react-icons/si';
 
 import { GoSun } from 'react-icons/go';
 import { GoMoon } from 'react-icons/go';
@@ -22,7 +23,7 @@ const social_media_icons = {
     leetcode: SiLeetcode,
     discord: FaDiscord,
     hackerrank: FaHackerrank,
-
+    codeforces: SiCodeforces,
     light_mode: GoSun,
     dark_mode: GoMoon,
 };

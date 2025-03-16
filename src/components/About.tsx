@@ -266,7 +266,7 @@ const About = () => {
                                     </div>
                                 </div>
 
-                                <ul className='list-disc space-y-2 text-sm ps-8 pe-2 md:px-15 pt-5 text-left md:text-justify'>
+                                <ul className='list-disc space-y-2 text-sm ps-8 pe-2 md:px-15 pt-5 text-justify'>
                                     {exp.achievements.map((item, i) => (
                                         <li key={i}>{item}</li>
                                     ))}
@@ -335,7 +335,7 @@ const About = () => {
                                     </div>
                                 </div>
 
-                                <ul className='list-disc space-y-2 text-sm ps-8 pe-2 md:px-15 pt-5 text-left md:text-justify'>
+                                <ul className='list-disc space-y-2 text-sm ps-8 pe-2 md:px-15 pt-5 text-justify'>
                                     {edu.domain.map((item, i) => (
                                         <li key={i}>{item}</li>
                                     ))}
@@ -349,15 +349,36 @@ const About = () => {
                     <p className='text-lg md:text-xl font-semibold'>Achievements</p>
                     <div className='mx-2 md:mx-10 my-6 space-y-10'>
                         <ul className='list-disc space-y-2'>
-                            <li>
-                                Ranked in the <span className='font-semibold'>top 10%</span> in Job-A-Thon 12 and{' '}
-                                <span className='font-semibold'>4096th</span> in CodeVita10.
-                            </li>
-                            <li>
-                                Solved <span className='font-semibold'>750+</span> problems on LeetCode, CodeChef, and
-                                GeeksForGeeks.
-                            </li>
-                            <li>Developed and published an Android application during an internship.</li>
+                            <div className='flex items-center space-x-2'>
+                                <li>
+                                    Ranked in the <span className='font-semibold'>top 10%</span> in Job-A-Thon 12 and{' '}
+                                    <span className='font-semibold'>4096th</span> in CodeVita10.
+                                </li>
+                                <a
+                                    href='https://drive.google.com/file/d/1ymb9Jmmlb9AH3wtMxZ_HVabwyuJy9aLw/view?usp=sharing'
+                                    target='_blank'
+                                    rel='noopener noreferrer'>
+                                    <MdInsertLink size={20} />
+                                </a>
+                            </div>
+                            <div className='flex items-center space-x-2'>
+                                <li>Developed and published an Android application during an internship.</li>
+                                <a
+                                    href='https://play.google.com/store/apps/details?id=facebook.lite.facebook.messenger.social'
+                                    target='_blank'
+                                    rel='noopener noreferrer'>
+                                    <MdInsertLink size={20} />
+                                </a>
+                            </div>
+                            <div className='flex items-center space-x-2'>
+                                <li>
+                                    Solved <span className='font-semibold'>850+</span> problems on LeetCode, CodeForces,
+                                    and GeeksForGeeks.
+                                </li>
+                                <a href='https://leetcode.com/u/debo_roy10/' target='_blank' rel='noopener noreferrer'>
+                                    <MdInsertLink size={20} />
+                                </a>
+                            </div>
                         </ul>
                     </div>
                 </div>
