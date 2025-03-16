@@ -19,7 +19,7 @@ const Navbar = () => {
     };
 
     return (
-        <nav className='fixed top-0 left-0 w-full h-20 shadow-lg flex items-center bg-[var(--color-white)] dark:bg-[var(--color-gray)] transition-colors duration-300 z-50'>
+        <nav className='fixed top-0 left-0 w-full h-20 shadow-lg flex items-center bg-white dark:bg-neutral-950 transition-colors duration-300 z-50'>
             <div className='container mx-auto flex justify-between items-center px-6 h-full'>
                 {/* Left: Menu Button + Logo */}
                 <div className='flex items-center gap-x-2'>
@@ -46,8 +46,8 @@ const Navbar = () => {
                             onClick={() => handleNavClick(item)}
                             className={`cursor-pointer font-semibold px-4 py-2 rounded-lg transition duration-300 ${
                                 activeLink === item
-                                    ? 'bg-blue-600/90 text-white dark:bg-blue-500/90'
-                                    : 'hover:bg-gray-200 dark:hover:bg-gray-700'
+                                    ? 'bg-gray-200 dark:bg-zinc-700'
+                                    : 'bg-none'
                             }`}>
                             {item}
                         </li>
@@ -62,7 +62,7 @@ const Navbar = () => {
 
             {/* Mobile Menu */}
             <div
-                className={`md:hidden fixed top-16 left-0 h-screen w-3/4 shadow-xl transform bg-[var(--color-white)] dark:bg-[var(--color-gray)] ${
+                className={`md:hidden fixed top-16 left-0 h-screen w-3/4 shadow-xl transform bg-white dark:bg-neutral-950 ${
                     isOpen ? 'translate-x-0 opacity-100' : '-translate-x-full opacity-0'
                 } transition-all duration-300 ease-in-out z-50`}>
                 {/* Profile Section */}
@@ -86,8 +86,8 @@ const Navbar = () => {
                             onClick={() => handleNavClick(item)}
                             className={`cursor-pointer font-semibold px-4 py-2 rounded-md transition duration-300 ${
                                 activeLink === item
-                                    ? 'bg-blue-600/90 text-white dark:bg-blue-500/90'
-                                    : 'hover:bg-gray-200 dark:hover:bg-gray-700'
+                                    ? 'bg-gray-200 dark:bg-zinc-700'
+                                    : 'bg-none'
                             }`}>
                             {item}
                         </li>

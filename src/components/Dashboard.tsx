@@ -7,7 +7,7 @@ const Dashboard = () => {
     return (
         <div
             id='home'
-            className='relative w-full h-screen p-6 md:p-10 lg:p-16 flex flex-col pt-22 bg-gray-200 dark:bg-gray-600'>
+            className='relative w-full h-screen p-6 md:p-10 lg:p-16 flex flex-col pt-22 bg-gray-200 dark:bg-stone-900'>
             {/* Main Content */}
             <div className='flex flex-1 flex-col-reverse md:flex-row items-center'>
                 {/* Left Empty Div (Moves to Bottom in Mobile) */}

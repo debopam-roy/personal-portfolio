@@ -190,7 +190,7 @@ const About = () => {
     ];
 
     return (
-        <div id='about' className='w-full px-6 md:px-16 lg:px-24 py-22 bg-gray-100 dark:bg-gray-700 flex flex-col'>
+        <div id='about' className='w-full px-6 md:px-16 lg:px-24 py-22 bg-gray-100 dark:bg-neutral-900 flex flex-col'>
             {/* Section Header */}
             <div className='flex flex-row gap-x-4 items-center my-8'>
                 <div className='w-12 h-[4px] bg-blue-600 dark:bg-blue-500 rounded'></div>
@@ -235,7 +235,7 @@ const About = () => {
                     <p className='text-lg md:text-xl font-semibold'>Work Experience</p>
                     <div className='mx-2 md:mx-10 my-6 space-y-10'>
                         {experiences.map((exp, index) => (
-                            <div key={index} className='p-6 bg-gray-200 dark:bg-gray-600 shadow rounded-lg'>
+                            <div key={index} className='p-6 bg-gray-200 dark:bg-zinc-700 shadow rounded-lg'>
                                 <div className='flex flex-row lg:items-center space-x-2 md:space-x-4'>
                                     <img
                                         src={exp.logo}
@@ -284,7 +284,7 @@ const About = () => {
                             {skills.map((skill, index) => (
                                 <div
                                     key={index}
-                                    className='flex items-center justify-center gap-2 px-4 py-2 bg-gray-200 dark:bg-gray-600 rounded-lg text-center shadow'>
+                                    className='flex items-center justify-center gap-2 px-4 py-2 bg-gray-200 dark:bg-zinc-700 rounded-lg text-center shadow'>
                                     <div className='flex gap-x-2 lg:md:gap-x-4 w-full px-2 lg:px-4 py-1 items-center'>
                                         <span className='text-2xl px-2'>{skill.icon}</span>
                                         <div className='h-5 w-px bg-gray-300 dark:bg-gray-500'></div>
@@ -304,7 +304,7 @@ const About = () => {
                     <p className='text-lg md:text-xl font-semibold'>Education</p>
                     <div className='mx-2 md:mx-10 my-6 space-y-10'>
                         {education.map((edu, index) => (
-                            <div key={index} className='p-6 bg-gray-200 dark:bg-gray-600 shadow rounded-lg'>
+                            <div key={index} className='p-6 bg-gray-200 dark:bg-zinc-700 shadow rounded-lg'>
                                 <div className='flex flex-row lg:items-center space-x-2 md:space-x-4'>
                                     <img
                                         src={edu.logo}
