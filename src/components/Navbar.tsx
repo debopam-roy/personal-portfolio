@@ -12,7 +12,7 @@ export default function Navbar({ activeSection, scrollToSection }: NavbarProps) 
   ];
 
   return (
-    <nav className="fixed bottom-6 left-1/2 transform -translate-x-1/2 z-50 bg-white backdrop-blur-md border border-gray-200 rounded-full shadow-lg">
+    <nav className="fixed bottom-6 left-1/2 transform -translate-x-1/2 z-10 bg-white backdrop-blur-md border border-gray-200 rounded-full shadow-xl">
       <ul className="flex gap-6 px-6 py-3">
         {navItems.map((item) => (
           <li

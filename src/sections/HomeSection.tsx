@@ -3,7 +3,7 @@ import Topbar from "@/components/Topbar";
 
 const HomeSection = () => {
   return (
-    <section id="home" className="min-h-screen relative bg-white max-w-7xl px-4 sm:px-6 lg:px-8">
+    <section id="home" className="min-h-screen relative bg-white max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
       <Topbar />
       
       <div className="flex items-center justify-center min-h-screen">
